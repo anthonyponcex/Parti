@@ -1,17 +1,2 @@
-# ParTi
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-HEEEEEEELlllllo from line 17.  
+# Parti
+This is the project of we 4
