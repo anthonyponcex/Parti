@@ -1,0 +1,80 @@
+#logo {
+	width:145px;
+	margin:5px 10px 5px 10px;
+}
+
+.start-box {	
+	top:-275px;
+	text-align:center;
+	margin:auto;
+	
+}
+
+#h1-div {
+	position:relative;
+	top:200px;
+	
+}
+
+#h2-div {
+	position:relative;
+	top:100px;
+	
+}
+
+#h3-div {
+	position:relative;
+	top:100px;
+	height:300px;
+	
+}
+
+#banner-container {
+	background: url(../images/wd-banner.png);
+	width:auto;
+	height:600px;
+	color:white;
+}
+
+#banner-container2 {
+	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/platter.jpg);
+	background-size:100% 100%;
+	width:auto;
+	height:600px;
+	color:white;
+}
+
+
+#banner-container3 {
+	background: url(../images/platter.jpg);
+	background-size:100%;
+	width:auto;
+	height:auto;
+	color:white;
+}
+
+banner-par {
+	background-size:100%;
+	width:auto;
+	height:auto;
+	color:white;
+}
+
+
+.simple {
+  font-size:50px;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+h5 {
+	color:#333333;
+}
+
+
+.start-btn {
+	height:45px;
+}
+
+footer {
+
+}
