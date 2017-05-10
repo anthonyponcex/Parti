@@ -1,276 +1,31 @@
-#jumbotron-image{
-          background-image: url(images/Desktop_banner1.png);
-          padding:0px;
-          height:600px;
-          position: relative;
-          margin: 0px;
+#logo {
+	width:145px;
+	margin:5px 10px 5px 10px;
+}
 
-        }
-        #nav {
-            background-color:black;
-            opacity:0.9;
-            color:white;
-            font-size:12px;
-            height:90px;
-            padding:10px 30px;
-            position:relative;
-            margin:0px;
+.start-box {	
+	top:-275px;
+	text-align:center;
+	margin:auto;
+	
+}
 
+#start {
+	position:relative;
+	top:-350px;
+	color:white;
 
-            }
-        #nav-links{
-            display: inline-block;
-            float: right;
+}
 
+#banner-img {
+	width:auto;
+   height: auto;
+}
 
-        }
-        
+.start-btn {
+	height:45px;
+}
 
-        #nav-links a{
-          font-family: 'Quicksand', sans-serif;
-          font-size: 17px;
-          color:#ffffff;
-        }
+footer {
 
-        #nav-links a:hover{
-          color: #E668FF;
-          background: none;
-        }
-
-        #login-box{
-          text-align: center;
-          position: absolute;
-          bottom: -70px;
-          left:200px;
-          right:200px;
-          margin-right: auto;
-          margin-left: auto;
-          background-color: #E668FF;
-          width:700px;
-          padding:30px;
-        }
-        #tag-line{
-          font-family: 'Quicksand', sans-serif;
-          font-size: 56px;
-          color: #ffffff;
-          position: absolute;
-          bottom: 170px;
-          left:25%;
-          right:25%;
-          text-align:center;
-        }
-        #tag-line-box{
-          font-family: 'Quicksand', sans-serif;
-          font-size: 32px;
-          margin:0px;
-          color:#ffffff;
-        }
-
-        #box-buttons {
-          margin-top: 30px;
-          padding:0px;
-          list-style: none;
-        }
-
-        #signup {
-          color:#ffffff;
-          font-family: 'Quicksand', sans-serif;
-          font-size: 15px;
-          background-color:gray;
-          padding:10px 30px;
-          width:200px;
-          display: inline;
-          border-radius: 100px;
-        }
-        #signup:hover{
-          background-color:#ffffff;
-          color:#E668FF;
-
-        }
-
-        #login {
-          font-family: 'Quicksand', sans-serif;
-          font-size: 15px;
-          background-color:white;
-          color:#E668FF;
-          padding:10px 30px;
-          width:200px;
-          display: inline;
-          border-radius: 100px;
-        }
-        #login:hover{
-          background-color:#4A4A4A;
-          color:#E668FF;
-        }
-
-        #logo {
-          
-          width:200px;
-          }
-
-
-        #container-section2{
-          background-color: #F3F3F3;
-          padding-top:130px;
-          padding-bottom:50px;
-
-        }
-        #featured-houses{
-          float: right;
-        }
-        .dummy-pix{
-          width:350px;
-          padding:5px;
-        }
-        .subheader{
-          color: #E668FF;
-          font-size: 70px;
-          font-weight: 700;
-          font-family: 'Quicksand', sans-serif;
-          text-transform: uppercase;
-          line-height: 65px;
-        }
-        #sub-header2{
-          font-size: 50px;
-          text-align: center;
-          padding-top:50px;
-          padding-bottom:50px;
-
-        }
-        .browse{
-          width: 100%;
-          background-color: #000;
-          text-align: center;
-          color:#fff;
-          font-family:'Quicksand', sans-serif;
-          font-size: 20px;
-          padding:40px;
-          
-        }
-        .browse-section{
-          margin:0px;
-          padding:0px;
-        }
-
-        #browse-location{
-          background: url("images/Locations.png");
-        }
-        #browse-catering{
-          background: url("images/Catering.png");
-        }
-        #browse-entertainment{
-          background: url("images/Entertaiment.png");
-        }
-        #uber{
-          background: url("images/Drink.png");
-        }
-        footer{
-          background-color: #E668FF;
-          padding: 20px;
-          
-        }
-        #footer-logo img{
-          margin-right: 50px;
-          width:200px;
-          float: right;
-        }
-        #copyright{
-          color:#fff;
-          margin-top: 20px;
-          margin-left: 50px;
-        }
-        
-        #gray-section{
-          color: #9B9B9B;
-        }
-
-        @media only screen and (max-width : 375px) {
-
-        	body, html {
-        		width:375px;
-        	}
-       /**/
-        #logo {          
-        	width:120px;
-          }
-
-        #navbar-nav {
-        	width:10px;
-        }
-		/*turn nav-links into dropdown menu button*/
-        #nav-links  {
-			font-size:5px;
-			width:175px;
-        }
-		
-		#nav {
-			height:67px;
-		}
-        
-        #tag-line {
-        	font-size:50px;
-        	bottom:250px;
-        }
-
-        #login-box {
-        	bottom:0px;
-        	left:30px;
-        	width:300px;
-        }
-
-	/*subheader section*/
-        
-
-        .subheader  {
-			font-size:50px;
-			text-align:center;
-			
-        }
-
-        #container-section2 {
-        	position:relative;
-			bottom:120px;
-			z-index:-1;
-    }
-    	#featured-houses {
-    		float:none;
-    	}
-
-    	#featured-houses img {
-    		width:300px;
-    		display: block;
-    		margin: auto;
-    	}
-
-
-    	#container-section3 {
-    		position:relative;
-			bottom:150px;
-			z-index:-1;
-			height:530px;
-
-    	}
-
-    	.browse-section {
-    		width:375px;
-    		margin:0px;
-    	}
-
-    	footer {
-    		position:relative;
-    		left:-20px
-    		width:375px;
-    		text-align:center;
-    	}
-
-    	#copyright {
-    		position:relative
-    		left:0px;
-    		margin:0px;
-    	}
-
-    	#footer-logo img {
-    		position:relative;
-    		right:75px;
-    		margin:0px;
-    	}
+}
