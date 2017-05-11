@@ -26,6 +26,11 @@ window.onload = function(){
 				    console.log(user);
 				});
 
-}
+};
 
+
+$("#login").on("click" , function(){
+		$('#modal1').modal('open');
+})
+  
 

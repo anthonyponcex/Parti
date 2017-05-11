@@ -1,6 +1,7 @@
 #logo {
 	width:145px;
 	margin:5px 10px 5px 10px;
+	text-align:center;
 }
 
 .start-box {	
@@ -14,6 +15,10 @@
 	position:relative;
 	top:200px;
 	
+}
+
+.card img{
+	height:200px;
 }
 
 #h2-div {
@@ -69,6 +74,18 @@
 	color:white;
 }
 
+#main-container {
+	background-color:#fafafa;
+	padding-top:5%;
+	margin-top:-15px;
+}
+
+#main-container2 {
+	background-color:#fafafa;
+	width:50%;
+	color:;
+	margin:auto;
+}
 
 banner-par {
 	background-size:100%;
