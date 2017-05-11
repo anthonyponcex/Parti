@@ -18,13 +18,19 @@
 window.onload = function(){
 				ESApi.init('2fb7e08a9f8fbce9');
 
-								var signin = {
+				//This is the use login for eatstreet
+				$("eatstreetlogin").click(function(){
+					var signin = {
 				    'email': 'newuser@eatstreet.com',
 				    'password': 'password'
 				};
 				ESApi.signinUser(signin, function(user) {
 				    console.log(user);
 				});
+
+				})
+
+				
 
 }
 
