@@ -18,13 +18,13 @@
 window.onload = function(){
 				ESApi.init('2fb7e08a9f8fbce9');
 
-				ESApi.searchRestaurants({ 'street-address': '316 W. Washington Ave. Madison, WI' }, function(response) {
-				    var address = response.address;
-				    var restaurants = response.restaurants;
-				    console.log(address, restaurants);
+								var signin = {
+				    'email': 'newuser@eatstreet.com',
+				    'password': 'password'
+				};
+				ESApi.signinUser(signin, function(user) {
+				    console.log(user);
 				});
-
-				
 
 }
 

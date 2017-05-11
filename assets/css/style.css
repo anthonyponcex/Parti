@@ -61,6 +61,15 @@
 	color:white;
 }
 
+#banner-container5 {
+	background: url(../images/music.jpeg);
+	background-size:100%;
+	width:auto;
+	height:auto;
+	color:white;
+}
+
+
 banner-par {
 	background-size:100%;
 	width:auto;
@@ -75,7 +84,8 @@ banner-par {
 }
 
 h5 {
-	color:#333333;
+	color:#efefef;
+
 }
 
 
