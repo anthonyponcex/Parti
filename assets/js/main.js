@@ -18,13 +18,37 @@
 window.onload = function(){
 				ESApi.init('2fb7e08a9f8fbce9');
 
-								var signin = {
+				// curl -X POST \
+				//  -H 'X-Access-Token: 2fb7e08a9f8fbce9' \
+				//  -H 'Content-Type: application/json' \
+				//  'https://api.eatstreet.com/publicapi/v1/signin'
+
+				//This is the use login for eatstreet
+				$("#eatstreetlogin").click(function(){
+					var signin = {
 				    'email': 'newuser@eatstreet.com',
 				    'password': 'password'
 				};
+				
 				ESApi.signinUser(signin, function(user) {
 				    console.log(user);
 				});
+
+				})
+
+				//This is the signup 
+				$("#eatstreetsignup").click(function(){
+				var newUser = {
+					    'email': 'newuser@eatstreet.com',
+					    'password': 'password',
+					    'firstName': 'New',
+					    'lastName': 'User',
+					    'phone': '6086667777'
+					};
+					ESApi.registerUser(newUser, function(_newUser) {
+					    console.log(_newUser);
+					});
+				})
 
 }
 
