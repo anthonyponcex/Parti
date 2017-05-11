@@ -37,16 +37,16 @@
 }
 
 #banner-container2 {
-	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/platter.jpg);
+	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/tacos.jpg);
 	background-size:100% 100%;
 	width:auto;
-	height:600px;
+	height:650px;
 	color:white;
+	
 }
 
-
 #banner-container3 {
-	background: url(../images/platter.jpg);
+	background: url(../images/tacos.jpg);
 	background-size:100%;
 	width:auto;
 	height:auto;
@@ -57,7 +57,7 @@
 	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/music.jpeg);
 	background-size:100% 100%;
 	width:auto;
-	height:600px;
+	height:650px;
 	color:white;
 }
 
@@ -69,10 +69,23 @@
 	color:white;
 }
 
+#main-container {
+
+}
+
+#main-container2 {
+
+}
+
+.nav-wrapper2 {
+	width:50%;
+	margin:auto;
+}
+
 #modal1,#modal2 {
 	width:30%;
 	color:#333333;
-}
+} 
 
 banner-par {
 	background-size:100%;

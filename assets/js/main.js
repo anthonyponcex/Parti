@@ -28,6 +28,7 @@
 
 // }
 
+//Random Taco Generator Call//
 $.ajax({
       url: "http://taco-randomizer.herokuapp.com/random/?full-taco=true",
       method: "GET"
@@ -39,3 +40,9 @@ $.ajax({
       console.log(response.base_layer)
 
 })
+
+// Modals function //
+$(document).ready(function(){
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal').modal();
+  });
