@@ -1,6 +1,7 @@
 #logo {
-	width:145px;
-	margin:5px 10px 5px 10px;
+	width:130px;
+	margin:10px;
+	
 }
 
 .start-box {	
@@ -37,45 +38,32 @@
 }
 
 #banner-container2 {
-	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/tacos.jpg);
+	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/tacos.jpg);
 	background-size:100% 100%;
 	width:auto;
 	height:650px;
 	color:white;
-	
+	margin-bottom:-300px;
 }
 
 #banner-container3 {
-	background: url(../images/tacos.jpg);
-	background-size:100%;
-	width:auto;
-	height:auto;
-	color:white;
-}
-
-#banner-container4 {
 	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/music.jpeg);
 	background-size:100% 100%;
 	width:auto;
 	height:650px;
 	color:white;
+	margin-bottom:-300px;
 }
 
-#banner-container5 {
+/*#banner-container3 {
 	background: url(../images/music.jpeg);
 	background-size:100%;
 	width:auto;
 	height:auto;
 	color:white;
-}
+}*/
 
-#main-container {
 
-}
-
-#main-container2 {
-
-}
 
 .nav-wrapper2 {
 	width:50%;

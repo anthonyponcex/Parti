@@ -14,16 +14,17 @@
 
     <body>
       <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
       
     
     <nav>
 	    <div class="nav-wrapper pink">
 
 	      <a href="index.html" class="brand-logo"><img id="logo" src="assets/images/Parti_logo.png" ></a>
+        
 	      
 	        
-	      </ul>
+	     
 	    </div>
   </nav>
 
@@ -35,7 +36,93 @@
             <div id="h1-div">          
 		          <h1>Get The Party Started.</h1>
               <br>
-              <a class="waves-effect waves-light btn btn-large pink lighten-4" href="food-login.html">3 Easy Steps&rarr;</a>
+              <div class="row">
+      
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l12 center-align">
+          <button class="waves-effect waves-light btn btn-large green lighten-1 modal-trigger" data-target="modal1" href="">Login&rarr;</a> </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        Email:
+          <div class="nav-wrapper">
+            <form>
+              <div class="input-field grey lighten-2">
+                <input id="login-email" type="email" required>
+                <label for="login-email">e.g johndoe@snailmail.com</label>
+              </div>
+            </form>
+          </div>                  
+        <br>
+        Password:
+        
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field grey lighten-2">
+          <input id="login-password" type="password" required>
+          <label for="login-password">**********</label>
+        </div>
+      </form>
+    </div>                
+    </div>
+
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Login</a>
+    </div>
+  </div>
+            
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l12 center-align">
+        <button class="waves-effect waves-light btn btn red lighten-2 modal-trigger" data-target="modal2" href="">Signup</a> </button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      Name:                  
+      <div class="nav-wrapper">
+        <form>
+          <div class="input-field grey lighten-2">
+            <input id="signup-name" type="text" required>
+            <label for="signup-name">John Doe</label>                        
+          </div>
+        </form>
+      </div>                
+      <br>
+      Email:                
+      <div class="nav-wrapper">
+        <form>
+          <div class="input-field grey lighten-2">
+            <input id="signup-email" type="email" required>
+            <label for="signup-email">e.g johndoe@snailmail.com</label>
+          </div>
+        </form>
+      </div>
+
+      <br>
+      Password:
+      <div class="nav-wrapper">
+        <form>
+          <div class="input-field grey lighten-2">
+            <input id="signup-pwd" type="password" required>
+            <label for="signup-pwd">**********</label>
+          </div>
+        </form>
+      </div>
+  </div>
+
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Sign Up!</a>
+  </div>
+  </div>             
+  </div>
+  </div>
             </div>
 		      </div>
       </div>
@@ -52,7 +139,7 @@
           </div>
         </footer>
             
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  
   <script type="text/javascript" src="assets/js/materialize.min.js"></script>
   <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
