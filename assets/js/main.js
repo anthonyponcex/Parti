@@ -3,12 +3,34 @@
   var provider = new firebase.auth.GoogleAuthProvider();  
   var user;
 
+  //gets and passes users email and password//
+function grabUser() {
+	firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    console.log(error.Message);
+
+});
+}
+
+//Handle Account Status --> when user is auth, will redirect to dashboard//
+function redirectDashboard() { 
+	firebase.auth().onAuthStateChanged(user => {
+  if(user) {
+    window.location = '/dashboard.html'; //After successful login, user will be redirected to home.html
+  }
+});
+}
+
+
   function signIn() {
   	firebase.auth().signInWithPopup(provider).then(function(result) {
   // This gives you a Google Access Token. You can use it to access the Google API.
   var token = result.credential.accessToken;
   // The signed-in user info.
   user = result.user;
+  grabUser();
+  redirectDashboard();
 
   // ...
 }).catch(function(error) {
@@ -41,23 +63,9 @@ $("signout-btn").on('click', function(){
 	signOut();
 }
 
-//gets and passes users email and password//
-firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    console.log(error.Message);
 
-});
-
-//Handle Account Status --> when user is auth, will redirect to dashboard//
-firebase.auth().onAuthStateChanged(user => {
-  if(user) {
-    window.location = '/dashboard.html'; //After successful login, user will be redirected to home.html
-  }
-});
 
   //modal functions//
-
 $(document).ready(function(){
   // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
   $('.modal').modal();
