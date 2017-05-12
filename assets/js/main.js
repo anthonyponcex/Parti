@@ -26,10 +26,23 @@
 // 				    console.log(user);
 // 				});
 
+
+//Firebase//
+// Initialize Firebase
+  var provider = new firebase.auth.GoogleAuthProvider();  
+
+
+  //modal functions//
+
 $(document).ready(function(){
   // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
   $('.modal').modal();
   })
+$(document).ready(function(){
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal3').modal();
+  })
+
 
 //Random Taco Generator AJAX//
 //Create outputs in "itemized list" for Name, Recipe, Condiment Name, Condiment Recipes & Base Layer//
@@ -38,8 +51,8 @@ $(document).ready(function(){
 $("#random-taco-div").empty();
 
  $("#taco-btn").click(function() {
- 	event.preventDefault();
  	$("#random-taco-div").empty();
+ 	event.preventDefault(); 	
 	$.ajax({
       url: "http://taco-randomizer.herokuapp.com/random/?full-taco=true",
       method: "GET"
@@ -55,7 +68,8 @@ $("#random-taco-div").empty();
       })
 
  	$("#submit-taco-btn").click(function() {
- 	var firstName = snapshot.child("response/name").val();
+ 	var firstName = snapshot.val(response.name);
+ 	cosone.log (firstName)
  	})
    
 
