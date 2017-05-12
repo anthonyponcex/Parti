@@ -1,35 +1,27 @@
-// //Initialize the Absolut Drinks Database 
-// addb.init({
-//     appId: 5
-// });
-
-// addb.configuration.defaultPageSize = 10;
-
-// addb.illHaveOnes().loadSet(function(query) { });
-// addb.illHaveOnes().take(10).loadSet(function(query) { });
-
-// Eatstreet API
-
-//         var es = document.createElement('script'); es.type = 'text/javascript'; es.async = true;
-//         es.src = ('https:' == document.location.protocol ? 'https://' : 'http://developers.') + 'eatstreet.com/api-js-sdk/js/sdk-remote.js';
-//         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(es, s);
-  
-
-// window.onload = function(){
-// 				ESApi.init('2fb7e08a9f8fbce9');
-
-// 								var signin = {
-// 				    'email': 'newuser@eatstreet.com',
-// 				    'password': 'password'
-// 				};
-// 				ESApi.signinUser(signin, function(user) {
-// 				    console.log(user);
-// 				});
-
-
 //Firebase//
 // Initialize Firebase
   var provider = new firebase.auth.GoogleAuthProvider();  
+
+  function signIn() {
+  	firebase.auth().signInWithPopup(provider).then(function(result) {
+  // This gives you a Google Access Token. You can use it to access the Google API.
+  var token = result.credential.accessToken;
+  // The signed-in user info.
+  var user = result.user;
+  // ...
+}).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // The email of the user's account used.
+  var email = error.email;
+  // The firebase.auth.AuthCredential type that was used.
+  var credential = error.credential;
+  // ...
+});
+}
+
+$("#login-btn").on('click', signIn());
 
 
   //modal functions//
