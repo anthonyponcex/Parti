@@ -1,26 +1,25 @@
 //Firebase//
 // Initialize Firebase
   var provider = new firebase.auth.GoogleAuthProvider();  
-  
+  // var user;
 
   //gets and passes users email and password//
-function grabUser() {
-	firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    console.log(error.Message);
+// function grabUser() {
+// 	firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+//     // Handle Errors here.
+//     var errorCode = error.code;
+//     console.log(error.Message);
 
-});
-}
+// });
+// }
 
-//Handle Account Status --> when user is auth, will redirect to dashboard//
-function redirectDashboard() { 
-	firebase.auth().onAuthStateChanged(user => {
-  if(user) {
-    window.location = '/dashboard.html'; //After successful login, user will be redirected to home.html
-  }
-});
-}
+// //Handle Account Status --> when user is auth, will redirect to dashboard//
+// function redirectDashboard() { firebase.auth().onAuthStateChanged(user => {
+//   if(user) {
+//     window.location = '/dashboard.html'; //After successful login, user will be redirected to home.html
+//   }
+// });
+// }
 
 
   function signIn() {
@@ -29,7 +28,9 @@ function redirectDashboard() {
   var token = result.credential.accessToken;
   // The signed-in user info.
   var user = result.user;
-  
+  // grabUser();
+  // redirectDashboard();
+
   // ...
 }).catch(function(error) {
   // Handle Errors here.
@@ -57,9 +58,9 @@ function signOut () {
 });
 }
 
-$("signout-btn").on('click', function() {
+$("signout-btn").on('click', function(){
 	signOut();
-})
+}
 
 
 
