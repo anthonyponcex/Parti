@@ -33,23 +33,30 @@ $(document).ready(function(){
 
 //Random Taco Generator AJAX//
 //Create outputs in "itemized list" for Name, Recipe, Condiment Name, Condiment Recipes & Base Layer//
+	
+
+$("#random-taco-div").empty();
+
+ $("#taco-btn").click(function() {
+ 	event.preventDefault();
+ 	$("#random-taco-div").empty();
 	$.ajax({
       url: "http://taco-randomizer.herokuapp.com/random/?full-taco=true",
       method: "GET"
     }).done(function(response) {
-      console.log(response.name); 
-      console.log(response.recipe); 
-      console.log(response.condiment.name);
-      console.log(response.condidemnt.recipe)
-      console.log(response.base_layer)
+    	var name = response.name
+    	var recipe = response.recipe    	
+      $("#random-taco-div").append("<div id='random-taco'>"+ "<h4>" + name + "</h4>" + "</div>" + '<button class="btn-floating disabled " id="submit-taco-btn"><i class="material-icons teal lighten-2">add</i></a>');
+      
+ 		console.log(response.name);
+ 	
   })
 
-    $("#taco-btn").click(function(response) {
-    	var randomTaco = $('<p>').text('Taco: ' + response[0].name);
-      	$("#taco-container").append('<div id="taco-div">' + randomTaco + '</div>')
-      	alert(randomTaco)
       })
 
+ 	$("#submit-taco-btn").click(function() {
+ 	var firstName = snapshot.child("response/name").val();
+ 	})
    
 
 //////////////////////////Youtube//////////////////////////
