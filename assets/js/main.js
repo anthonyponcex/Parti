@@ -9,7 +9,7 @@
   var token = result.credential.accessToken;
   // The signed-in user info.
   user = result.user;
-  load("dashboard.html")
+
   // ...
 }).catch(function(error) {
   // Handle Errors here.
@@ -23,14 +23,10 @@
 });
 }
 
-function redirectDashboard() {
-	$
-}
 
 //login function for google sign in pop up//
 $("#login-btn").on('click', function() {
 	signIn();
-	
 })
 
 function signOut () {
@@ -44,6 +40,7 @@ function signOut () {
 $("signout-btn").on('click', function(){
 	signOut();
 }
+
 //gets and passes users email and password//
 firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
     // Handle Errors here.
@@ -55,7 +52,7 @@ firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error
 //Handle Account Status --> when user is auth, will redirect to dashboard//
 firebase.auth().onAuthStateChanged(user => {
   if(user) {
-    window.location = 'dashboard.html'; //After successful login, user will be redirected to home.html
+    window.location = '/dashboard.html'; //After successful login, user will be redirected to home.html
   }
 });
 
