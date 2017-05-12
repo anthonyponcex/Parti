@@ -58,7 +58,7 @@ function signOut () {
 
 $("signout-btn").on('click', function(){
 	signOut();
-}
+})
 
 
 
