@@ -3,26 +3,26 @@
     <head>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+      <!-- Import your own css files -->
       <link rel="stylesheet" href="assets/css/style.css">
-
       <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-          
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+      <!--Import materialize.css-->     
+      <link rel="stylesheet" href="assets/css/materialize.min.css">
+              
     </head>
 
     <body>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+    <div id="banner-container4"> 
+    <div class="navbar-fixed transparent">  
+    <nav class="transparent">
+    <div class="nav-wrapper transparent">
+        <a href="index.html" class="brand-logo"><img id="logo" src="assets/images/Parti_logo.png" ></a>        
+    </div>
+    </nav>
+    </div>
     
+<<<<<<< HEAD
     <nav>
     <div class="nav-wrapper grey darken-3">
 
@@ -32,23 +32,72 @@
   </nav>
 
     <div id="banner-container4">     
+=======
+>>>>>>> anthony
       <div class="row">
         <div class="col m3"></div>
           <div id="h2-div">
             <div class="col m6 offset-3 center">            
               <h1 class="simple">Step 2: Find Your DJ Playlist!</h1>
               <br> <br> <br>
-              <!-- Here we will add a modal and load the javascript logic for eatsreet api login -->
-              <a class="waves-effect waves-light btn btn-large green lighten-1" href="">Mixcloud login&rarr;</a> 
-              <br>
-              <br>
-              <a class="waves-effect waves-light btn red lighten-2" href="">Signup</a> 
               
+              <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l12 center-align">
+          <button class="waves-effect waves-light btn btn-large green lighten-1 modal-trigger" data-target="modal2" href="">MixCloud Login&rarr;</a> </button>
+        </div>
       </div>
     </div>
+    <!-- Modal Structure -->
+    <div id="modal2" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        Email:
+          <div class="nav-wrapper">
+            <form>
+              <div class="input-field grey lighten-2">
+                <input id="mc-login" type="email" required>
+                <label for="mc-login">e.g johndoe@snailmail.com</label>
+              </div>
+            </form>
+          </div>                  
+        <br>
+        Password:
+        
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field grey lighten-2">
+          <input id="mc-pwd" type="password" required>
+          <label for="mc-pwd">**********</label>
+        </div>
+      </form>
+    </div>                
+    </div>
 
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Login!</a>
+    </div>
+  </div>
+
+    <div id ="music-container">
+      <div class="row">
+        <div class="s12 m8 l6">
+        <div class="collection">
+        <!-- Just an example, need to append this div with the buttons below and grab the value of the button they choose -->
+          <a href="#!" class="collection-item">The Smiths - Heaven Knows Im Miserable Now</a>
+          <a href="#!" class="collection-item">The Sounds - Crossing The Rubicon</a>
+          <a href="#!" class="collection-item">Paramore - All We Know Is Falling</a>
+          <a href="#!" class="collection-item">Alan</a>
+  </div>
+
+
+<<<<<<< HEAD
     
 
 
+=======
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+>>>>>>> anthony
   </body>
   </html>

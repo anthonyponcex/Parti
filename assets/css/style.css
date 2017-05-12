@@ -1,7 +1,7 @@
 #logo {
-	width:145px;
-	margin:5px 10px 5px 10px;
-	text-align:center;
+	width:130px;
+	margin:10px;
+	
 }
 
 .start-box {	
@@ -17,22 +17,7 @@
 	
 }
 
-.card img{
-	height:200px;
-}
 
-#h2-div {
-	position:relative;
-	top:100px;
-	
-}
-
-#h3-div {
-	position:relative;
-	top:100px;
-	height:300px;
-	
-}
 
 #banner-container {
 	background: url(../images/wd-banner.png);
@@ -42,50 +27,43 @@
 }
 
 #banner-container2 {
-	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/platter.jpg);
+	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/tacos.jpg);
 	background-size:100% 100%;
 	width:auto;
-	height:600px;
+	height:650px;
 	color:white;
+	margin-bottom:-300px;
 }
-
 
 #banner-container3 {
-	background: url(../images/platter.jpg);
-	background-size:100%;
-	width:auto;
-	height:auto;
-	color:white;
-}
-
-#banner-container4 {
 	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/music.jpeg);
 	background-size:100% 100%;
 	width:auto;
-	height:600px;
+	height:675px;
 	color:white;
+	margin-bottom:-400px;
 }
 
-#banner-container5 {
-	background: url(../images/music.jpeg);
-	background-size:100%;
-	width:auto;
-	height:auto;
-	color:white;
+#taco-container {
+	margin-top:75px;
 }
 
-#main-container {
-	background-color:#fafafa;
-	padding-top:5%;
-	margin-top:-15px;
-}
-
-#main-container2 {
-	background-color:#fafafa;
-	width:50%;
-	color:;
+#music-container {
+	width:40%;
 	margin:auto;
 }
+
+
+
+.nav-wrapper2 {
+	width:50%;
+	margin:auto;
+}
+
+#modal1,#modal2 {
+	width:30%;
+	color:#333333;
+} 
 
 banner-par {
 	background-size:100%;

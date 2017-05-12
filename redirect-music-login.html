@@ -3,65 +3,78 @@
     <head>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+      <!-- Import your own css files -->
       <link rel="stylesheet" href="assets/css/style.css">
-
       <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-  
-          
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+      <!--Import materialize.css-->     
+      <link rel="stylesheet" href="assets/css/materialize.min.css">
+              
     </head>
 
     <body>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-
     
-    <nav>
-    <div class="nav-wrapper grey darken-3">
+  <div id="banner-container3">  
+  <div class="navbar-fixed transparent">  
+    <nav class="transparent">
+    <div class="nav-wrapper transparent">
+        <a href="index.html" class="brand-logo"><img id="logo" src="assets/images/Parti_logo.png" ></a>        
+    </div>
+    </nav>
+    </div>
 
-        <a href="index.html" class="brand-logo"><img id="logo" src="assets/images/Parti_logo.png" ></a>
-        
-      </div>
-  </nav>
-
-  <div id="banner-container5">     
     <div class="row">
       <div class="col m3"></div>
         <div id="h3-div">
           <div class="col m6 offset-3 center">            
             <h1 class="simple">Step 2: Choose Your DJ</h1>
-            <h5><i>What you feelin'?</i></h5>
+            <h5><i>What genre you feelin'?</i></h5>
         </div>               
       </div>
     </div>
   </div>
-  <br><br>
+  
 
-  <div id="main-container2">
-     
-<nav>
-    <div class="nav-wrapper">
+  <div id="main-container2">  
+    <div class="nav-wrapper nav-wrapper2">
       <form>
         <div class="input-field pink lighten-4">
-          <input id="search" type="search" required>
-          <label for="search"><i class="material-icons">search</i></label>
+          <input id="music-search" type="search" required>
+          <label for="music-search">e.g Rock, Hip Hop, Paramore, The Smiths</label>
           <!-- I've put "red-text" class to emphasize -->
           <i class="material-icons grey-text">close</i>
         </div>
       </form>
     </div>
-  </nav>
+
+    <div id ="music-container">
+      <div class="row">
+        <div class="s12 m12 l12">
+        <div class="collection">
+        <!-- Just an example, need to append this div with the buttons below and grab the value of the button they choose -->
+          <a href="#!" class="collection-item">The Smiths - Heaven Knows Im Miserable Now</a>
+          <a href="#!" class="collection-item">The Sounds - Crossing The Rubicon</a>
+          <a href="#!" class="collection-item">Paramore - All We Know Is Falling</a>
+          <a href="#!" class="collection-item">The Pixies - Where is My Mind</a>
+          <a href="#!" class="collection-item">Testing - Testing</a>
+        </div>
+        </div>
+          <ul class="pagination center-align">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active pink"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
+      </div>
+    </div>
       
   
-  <script src="text/javascript" href="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script src="https://apis.google.com/js/client.js?onload=load"></script>
   </body>
   </html>
