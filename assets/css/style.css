@@ -22,6 +22,7 @@
 #banner-container {
 	background: url(../images/wd-banner.png);
 	background-attachment:fixed;
+	background-size:100% 100%;
 	width:auto;
 	height:600px;
 	color:white;
@@ -39,6 +40,26 @@
 
 #banner-container3 {
 	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/music.jpeg);
+	background-attachment:fixed;
+	background-size:100% 100%;
+	width:auto;
+	height:675px;
+	color:white;
+	margin-bottom:-400px;
+}
+
+#banner-container4 {
+	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/dinner.jpg);
+	background-attachment:fixed;
+	background-size:100% 100%;
+	width:auto;
+	height:675px;
+	color:white;
+	margin-bottom:-400px;
+}
+
+#banner-container5 {
+	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/party1.jpeg);
 	background-attachment:fixed;
 	background-size:100% 100%;
 	width:auto;
