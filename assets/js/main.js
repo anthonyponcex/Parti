@@ -1,13 +1,15 @@
 //Firebase//
 // Initialize Firebase
   var provider = new firebase.auth.GoogleAuthProvider();  
+  var user;
 
   function signIn() {
   	firebase.auth().signInWithPopup(provider).then(function(result) {
   // This gives you a Google Access Token. You can use it to access the Google API.
   var token = result.credential.accessToken;
   // The signed-in user info.
-  var user = result.user;
+  user = result.user;
+  load("dashboard.html")
   // ...
 }).catch(function(error) {
   // Handle Errors here.
@@ -21,11 +23,27 @@
 });
 }
 
+function redirectDashboard() {
+	$
+}
+
 //login function for google sign in pop up//
 $("#login-btn").on('click', function() {
 	signIn();
+	
 })
 
+function signOut () {
+	firebase.auth().signOut().then(function() {
+  // Sign-out successful.
+}).catch(function(error) {
+  // An error happened.
+});
+}
+
+$("signout-btn").on('click', function(){
+	signOut();
+}
 //gets and passes users email and password//
 firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
     // Handle Errors here.
