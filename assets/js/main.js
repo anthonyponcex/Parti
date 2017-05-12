@@ -35,7 +35,8 @@ $(document).ready(function(){
 
 //Random Taco Generator AJAX//
 //Create outputs in "itemized list" for Name, Recipe, Condiment Name, Condiment Recipes & Base Layer//
-$.ajax({
+function displayRandomTaco() {
+	$.ajax({
       url: "http://taco-randomizer.herokuapp.com/random/?full-taco=true",
       method: "GET"
     }).done(function(response) {
@@ -44,8 +45,17 @@ $.ajax({
       console.log(response.condiment.name);
       console.log(response.condidemnt.recipe)
       console.log(response.base_layer)
+  })
 
-})
+    $("#taco-btn").click(function(response) {
+    	var randomTaco = $('<p>').text('Taco: ' + response[0].name);
+      	$("#taco-container").append('<div id="taco-div">' + randomTaco + '</div>')
+      	alert(randomTaco)
+      })
+}
+
+displayRandomTaco();
+   
 
 //////////////////////////Youtube//////////////////////////
 
