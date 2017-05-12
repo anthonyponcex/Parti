@@ -1,7 +1,7 @@
 //Firebase//
 // Initialize Firebase
   var provider = new firebase.auth.GoogleAuthProvider();  
-  var user;
+  
 
   //gets and passes users email and password//
 function grabUser() {
@@ -28,9 +28,8 @@ function redirectDashboard() {
   // This gives you a Google Access Token. You can use it to access the Google API.
   var token = result.credential.accessToken;
   // The signed-in user info.
-  user = result.user;
- 
-
+  var user = result.user;
+  
   // ...
 }).catch(function(error) {
   // Handle Errors here.
@@ -58,9 +57,9 @@ function signOut () {
 });
 }
 
-$("signout-btn").on('click', function(){
+$("signout-btn").on('click', function() {
 	signOut();
-}
+})
 
 
 
