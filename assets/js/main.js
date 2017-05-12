@@ -21,7 +21,9 @@
 });
 }
 
-$("#login-btn").on('click', signIn());
+$("#login-btn").on('click', function() {
+	signIn();
+})
 
 
   //modal functions//
