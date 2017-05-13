@@ -12,7 +12,7 @@
   // The signed-in user info.
    user = result.user;
 
-   location = '/steptwo.html'
+   location = '/steptwo.html';
   // ...
 }).catch(function(error) {
   // Handle Errors here.
@@ -26,20 +26,20 @@
 });
 }
 
-//Cover authentication on all environments
-var ref = new Firebase("https://parti-4f1cd.firebaseio.com");
-// prefer pop-ups, so we don't navigate away from the page
-ref.authWithOAuthPopup("google", function(error, authData) {
-  if (error) {
-    if (error.code === "TRANSPORT_UNAVAILABLE") {
-      // fall-back to browser redirects, and pick up the session
-      // automatically when we come back to the origin page
-      ref.authWithOAuthRedirect("google", function(error) { /* ... */ });
-    }
-  } else if (authData) {
-    // user authenticated with Firebase
-  }
-});
+// //Cover authentication on all environments
+// var ref = new Firebase("https://parti-4f1cd.firebaseio.com");
+// // prefer pop-ups, so we don't navigate away from the page
+// ref.authWithOAuthPopup("google", function(error, authData) {
+//   if (error) {
+//     if (error.code === "TRANSPORT_UNAVAILABLE") {
+//       // fall-back to browser redirects, and pick up the session
+//       // automatically when we come back to the origin page
+//       ref.authWithOAuthRedirect("google", function(error) { /* ... */ });
+//     }
+//   } else if (authData) {
+//     // user authenticated with Firebase
+//   }
+// });
 
 // document.getElementById("g-signin2").onclick = function () {
 //         location.href = "steptwo.html";
