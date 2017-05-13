@@ -1,3 +1,3 @@
 # Parti: The Party that belongs to YOU
 
-Contributions by: Anthony, Annie, Ali & Natahsa
+Contributions by: Anthony, Annie, Ali & Natasha

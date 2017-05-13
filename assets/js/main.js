@@ -23,6 +23,10 @@
 });
 }
 
+function success(){
+  if(result.user === "no_errors") location.href = "steptwo.html"
+}
+
 
 
 // //Information on user//
@@ -98,11 +102,18 @@ $("#random-taco-div").empty();
 
  	$("#submit-taco-btn").click(function() {
  	var firstName = snapshot.val(response.name);
- 	cosone.log (firstName)
+ 	console.log (firstName)
  	})
    
 
 //////////////////////////Youtube//////////////////////////
+var playlistId = "PLx_tr69QV8CByyL_jpBdCrta0cUCDAlQ3",
+        APIKey = "AIzaSyDMF67YvmIVd7_ruOVcXg3ZSeTBbM2XfLk",
+        baseURL = "https://www.googleapis.com/youtube/v3/";
+
+    $.get(baseURL + "playlistItems?part=snippet&maxResults=50&playlistId=" + playlistId + "&key=" + APIKey, function(data) {
+        $("#music-container").append("<div class='row'>")
+    });
 
 // //Auth Request//
 // function youtubeApiCall(){
