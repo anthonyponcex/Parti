@@ -11,8 +11,6 @@
   var token = result.credential.accessToken;
   // The signed-in user info.
    user = result.user;
-
-   location = '/steptwo.html';
   // ...
 }).catch(function(error) {
   // Handle Errors here.
@@ -25,6 +23,18 @@
   // ...
 });
 }
+
+app.post('/index.html', function (req, res, next) {
+
+    const email = req.body.email;
+    const password = req.body.password;
+
+    firebase.auth()
+        .signInWithEmailAndPassword(email, password)
+        .then(function(user) { res.redirect('/steptwo.html'); })
+        .catch(next);
+});
+
 
 // //Cover authentication on all environments
 // var ref = new Firebase("https://parti-4f1cd.firebaseio.com");
