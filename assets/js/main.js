@@ -32,6 +32,12 @@ function onSignIn(googleUser) {
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  
+   firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    window.location.href = "/dashboard"
+  }
+});
 }
 
 //Signout//
@@ -41,6 +47,8 @@ function signOut() {
       console.log('User signed out.');
     });
   }
+
+
 
 // $("#login-btn").on('click', function() {
 // 	signIn();
