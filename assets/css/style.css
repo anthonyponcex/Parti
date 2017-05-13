@@ -11,6 +11,13 @@
 	
 }
 
+#drinks-info img {
+			width: 50%;
+			height: 400px;
+			padding:0px;
+			margin:auto;
+}
+
 #h1-div {
 	position:relative;
 	top:200px;
@@ -53,7 +60,7 @@
 	background-attachment:fixed;
 	background-size:100% 100%;
 	width:auto;
-	height:675px;
+	height:800px;
 	color:white;
 	margin-bottom:-400px;
 }
@@ -67,6 +74,17 @@
 	color:white;
 	margin-bottom:-400px;
 }
+
+#banner-container6 {
+	background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/party2.jpeg);
+	background-attachment:fixed;
+	background-size:100% 100%;
+	width:auto;
+	height:675px;
+	color:white;
+	margin-bottom:-400px;
+}
+
 
 #taco-container {
 	margin-top:75px;
