@@ -2,14 +2,14 @@
 // Initialize Firebase
 
  var provider = new firebase.auth.GoogleAuthProvider();  
- var user;
+ 
 
   function signIn() {
   	firebase.auth().signInWithPopup(provider).then(function(result) {
   // This gives you a Google Access Token. You can use it to access the Google API.
   var token = result.credential.accessToken;
   // The signed-in user info.
-  user = result.user;
+   user = result.user;
   // ...
 }).catch(function(error) {
   // Handle Errors here.
@@ -33,6 +33,7 @@ function onSignIn(googleUser) {
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present
   signIn();
+  var user = result.user;
   firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     window.location.href = "/dashboard"
