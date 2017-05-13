@@ -1,5 +1,6 @@
 //Firebase//
 // Initialize Firebase
+
   var provider = new firebase.auth.GoogleAuthProvider();  
   // var user;
 
