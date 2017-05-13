@@ -1,35 +1,14 @@
 //Firebase//
 // Initialize Firebase
 
-  var provider = new firebase.auth.GoogleAuthProvider();  
-  // var user;
+ var provider = new firebase.auth.GoogleAuthProvider();  
 
-  //gets and passes users email and password//
-// function grabUser() {
-// 	firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-//     // Handle Errors here.
-//     var errorCode = error.code;
-//     console.log(error.Message);
-
-// });
-// }
-
-// //Handle Account Status --> when user is auth, will redirect to dashboard//
-// function redirectDashboard() { firebase.auth().onAuthStateChanged(user => {
-//   if(user) {
-//     window.location = '/dashboard.html'; //After successful login, user will be redirected to home.html
-//   }
-// });
-// }
   function signIn() {
   	firebase.auth().signInWithPopup(provider).then(function(result) {
   // This gives you a Google Access Token. You can use it to access the Google API.
   var token = result.credential.accessToken;
   // The signed-in user info.
   var user = result.user;
-  // grabUser();
-  // redirectDashboard();
-
   // ...
 }).catch(function(error) {
   // Handle Errors here.
@@ -43,23 +22,22 @@
 });
 }
 
-
-//login function for google sign in pop up//
 $("#login-btn").on('click', function() {
 	signIn();
 })
 
-function signOut () {
-	firebase.auth().signOut().then(function() {
-  // Sign-out successful.
-}).catch(function(error) {
-  // An error happened.
-});
-}
 
-$("signout-btn").on('click', function(){
-	signOut();
-})
+// function signOut () {
+// 	firebase.auth().signOut().then(function() {
+//   // Sign-out successful.
+// }).catch(function(error) {
+//   // An error happened.
+// });
+// }
+
+// $("signout-btn").on('click', function(){
+// 	signOut();
+// })
 
 
 
