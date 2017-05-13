@@ -80,9 +80,11 @@
   };
   firebase.initializeApp(config);
 
-  if(user) {
-  window.location.href = "http://anthonyponcex.github.com/dashboard";
-}
+  firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    window.location.href = "/dashboard"
+  }
+});
 
 </script>
 

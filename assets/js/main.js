@@ -22,9 +22,6 @@
 });
 }
 
-if(user) {
-	window.location.href = "http://anthonyponcex.github.com/dashboard";
-}
 
 
 //Information on user//
@@ -48,14 +45,6 @@ function signOut() {
 // 	signIn();
 // })
 
-
-// function signOut () {
-// 	firebase.auth().signOut().then(function() {
-//   // Sign-out successful.
-// }).catch(function(error) {
-//   // An error happened.
-// });
-// }
 
 // $("signout-btn").on('click', function(){
 // 	signOut();
