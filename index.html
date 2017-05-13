@@ -67,8 +67,10 @@
           </div>
         </footer>
 
+
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
 <script>
   // Initialize Firebase
   var config = {
@@ -81,7 +83,15 @@
   };
   firebase.initializeApp(config);
 
-firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+</script>
+
+  
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
     console.log(error.Message);
@@ -96,15 +106,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     // No user is signed in.
   }
 });
-
 </script>
-
-  
-  
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    
 
   </body>
   </html>

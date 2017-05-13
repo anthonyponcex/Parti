@@ -23,21 +23,7 @@
 });
 }
 
-firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    console.log(error.Message);
 
-});
-
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-    // User is signed in.
-    window.location = 'dashboard.html';
-  } else {
-    // No user is signed in.
-  }
-});
 
 //Information on user//
 function onSignIn(googleUser) {
@@ -49,7 +35,6 @@ function onSignIn(googleUser) {
   signIn();
   var user = result.user;
   
-});
 }
 
 //Signout//
