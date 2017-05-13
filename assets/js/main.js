@@ -172,7 +172,7 @@ $("#random-taco-div").empty();
  	$("#random-taco-div").empty();
  	event.preventDefault(); 	
 	$.ajax({
-      url: "http://taco-randomizer.herokuapp.com/random/?full-taco=true",
+      url: "https://taco-randomizer.herokuapp.com/random/?full-taco=true",
       method: "GET"
     }).done(function(response) {
     	var name = response.name
@@ -196,7 +196,7 @@ $("#drinks-info").empty();
 $("#recipe-btn").click(function(){
   	$("#drinks-info").empty();
 	$.ajax({
-    		url: "http://www.thecocktaildb.com/api/json/v1/1/random.php",
+    		url: "https://www.thecocktaildb.com/api/json/v1/1/random.php",
     		method:"GET"
     	}).done(function(response) {
 
